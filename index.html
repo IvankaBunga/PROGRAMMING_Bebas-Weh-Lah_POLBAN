@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RuteKita — Direktori Trayek Bandung Raya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><a class="logo" href="#top">Rute<span>Kita</span></a><nav><a href="#top">Beranda</a><a href="#planner">Cari Rute</a><a class="active" href="#explorer">Jelajahi Trayek</a><a href="#map-section">Peta</a><a href="#about">Tentang Data</a></nav><a class="nav-cta" href="#explorer">Jelajahi trayek ↗</a><button class="hamb" aria-label="Menu">☰</button></header>
+<main id="top">
+<section class="hero wrap"><div><div class="eyebrow"><i></i> BANDUNG RAYA · LAGI DI JALAN?</div><h1>Naik apa ya?<br><em>Cek di sini.</em></h1><p>Bingung angkot, bus, atau kereta di Bandung Raya? Cari rute dari A ke B, intip jalurnya di peta, dan lihat perkiraan ongkosnya.</p><a class="btn" href="#explorer">Gas jelajahi <b>↓</b></a><div class="hero-meta"><span><b id="statTotal">–</b> trayek unik · dari <span id="statFiles">385</span> file KML</span><span><b id="statConfirmed">–</b> terkonfirmasi</span><span><b id="statLikely">–</b> dugaan</span><span><b id="statUnknown">–</b> belum jelas</span></div></div>
+<div class="hero-photo" id="heroPhoto"><div class="hero-slides" id="heroSlides"></div><div class="photo-label">✦ ROUTE STORIES</div><div class="photo-note"><b id="photoTitle">Bandung</b><p id="photoDesc"></p><small id="photoCredit"></small></div><div class="hero-dots" id="heroDots"></div></div></section>
+
+<section class="wrap planner-section" id="planner">
+<div class="section-title"><div><label>JOURNEY PLANNER</label><h2>Mau ke mana nih?</h2><p>Isi asal dan tujuan, nanti RuteKita carikan trayek yang dinaiki, tempat oper, sama perkiraan ongkosnya.</p></div><span class="section-no">PLANNER</span></div>
+<div class="planner-layout">
+<div class="planner-panel">
+<div class="plan-field"><span class="plan-dot a">A</span><div><label for="planFrom">Dari</label><input id="planFrom" list="planPlaces" autocomplete="off" placeholder="Mis. Terminal Ciparay"></div><button type="button" class="plan-pick" data-k="from" title="Pilih titik asal di peta">📍 Peta</button></div>
+<button type="button" class="plan-swap" id="planSwap" aria-label="Tukar asal dan tujuan">⇅</button>
+<div class="plan-field"><span class="plan-dot b">B</span><div><label for="planTo">Ke</label><input id="planTo" list="planPlaces" autocomplete="off" placeholder="Mis. Pasar Panorama Lembang"></div><button type="button" class="plan-pick" data-k="to" title="Pilih titik tujuan di peta">📍 Peta</button></div>
+<datalist id="planPlaces"></datalist>
+<button type="button" class="btn plan-go" id="planGo">Cari rute <b>→</b></button>
+<div class="plan-err" id="planErr"></div><small class="plan-status" id="planStatus">Memuat data pencarian...</small>
+<div id="planResult" class="plan-result"><div class="plan-empty"><b>Belum ada pencarian.</b><p>Ketik nama tempat (muncul saran dari data), atau klik “📍 Peta” lalu klik lokasi di peta.</p></div></div>
+</div>
+<div class="planner-map"><div id="planMap"></div></div>
+</div>
+</section>
+
+<section class="wrap explorer-section" id="explorer">
+<div class="section-title"><div><label>ROUTE DIRECTORY</label><h2>Cari trayek favoritmu.</h2><p>Cari berdasarkan nama trayek atau nama titik yang tercatat di file.</p></div><span class="section-no">01 / DIRECTORY</span></div>
+<div class="explorer-layout">
+<aside class="filter-panel">
+<div class="filter-head"><span class="filter-icon">⌕</span><div><b>Filter pencarian</b><small>Persempit daftar trayek</small></div></div>
+<label for="routeSearch">Nama trayek atau titik</label><input id="routeSearch" type="search" placeholder="Mis. Cileunyi, Lembang...">
+<label for="modeFilter">Kategori data</label><select id="modeFilter"><option value="all">Memuat kategori...</option></select>
+<div class="filter-explain"><b>Terkonfirmasi vs dugaan</b><p><span class="mode-chip known">Biru</span> = jenis kendaraan terbaca eksplisit dari nama file/titik. <span class="mode-chip likely">Kuning</span> = dugaan dari pola penamaan (mis. kode angka angkot). Abu-abu = hampir pasti minibus, tetapi angkot / angkutan pedesaan / Elf belum bisa dibedakan.</p></div>
+<div class="dataset-stats"><div><strong id="statTotal2">385</strong><span>file KML</span></div><div><strong id="statCats">–</strong><span>kategori dikenali</span></div></div>
+</aside>
+<div class="directory-panel">
+<div class="directory-head"><div><label>DATASET ROUTES</label><h3 id="listTitle">Seluruh trayek</h3><p id="routeCount">Memuat data...</p></div><span class="source-pill">KML → GEOJSON</span></div>
+<div class="route-list" id="routeList"><div class="loading">Memuat direktori trayek...</div></div>
+<div class="list-foot">Pilih salah satu kartu untuk membuka detail trayek dan menyorot jalurnya pada peta.</div>
+</div>
+</div>
+</section>
+
+<section class="wrap detail-section" id="detail-section">
+<div class="section-title"><div><label>ROUTE DETAILS</label><h2>Detail trayek.</h2><p>Detail berikut hanya menampilkan informasi yang benar-benar tersedia dalam file sumber.</p></div><span class="section-no">02 / DETAILS</span></div>
+<div id="detailPanel" class="detail-empty"><span>↖</span><b>Belum ada trayek dipilih</b><p>Klik kartu trayek di direktori untuk melihat kendaraan yang teridentifikasi, titik, dan geometri jalurnya.</p></div>
+</section>
+
+<section class="wrap map-section" id="map-section"><div class="section-title"><div><label>GEOGRAPHIC VIEW</label><h2>Lihat jalurnya.</h2><p>Garis biru menunjukkan geometri dari file KML yang dipilih, bukan navigasi belokan demi belokan.</p></div><span class="section-no">03 / MAP</span></div>
+<div class="map-shell"><div id="mapview"></div><div class="map-badge"><i></i><span><b id="mapRouteName">Belum ada trayek dipilih</b><small>Geometri dari dataset KML</small></span></div></div>
+<div class="map-legend"><span><i class="line-blue"></i> Jalur dari KML</span><span><i class="point-orange"></i> Titik bernama dari KML</span><small>© OpenStreetMap contributors</small></div>
+</section>
+
+<section class="wrap about-section" id="about"><div><label>DATA TRANSPARENCY</label><h2>Sumbernya jelas,<br>batasnya juga.</h2></div><div><p>RuteKita menggunakan arsip KML Transport for Bandung yang diunggah untuk proyek ini. File tersebut berisi geometri jalur dan sebagian titik bernama. Data geometri tidak otomatis membuktikan layanan masih aktif, jenis kendaraan, tarif, jadwal, arah operasional, atau titik transit resmi.</p><p>Tarif di RuteKita berupa <b>estimasi per kategori kendaraan</b> yang ditandai tingkat keyakinan dan sumbernya, bukan tarif resmi per trayek. Kategori kendaraan ditandai “terkonfirmasi” bila terbaca dari nama file/titik, dan “dugaan” bila hanya disimpulkan dari pola penamaan. Nominal terverifikasi di data/fares.json akan menimpa estimasi.</p><p class="source-note">Sumber data geografis: Transport for Bandung / OpenStreetMap contributors. Perhatikan atribusi dan ketentuan lisensi data sumber.</p></div></section>
+</main>
+<footer><a class="logo" href="#top">Rute<span>Kita</span></a><span>Move around Bandung, your way.</span><small>© 2026 RuteKita · Data explorer prototype</small></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="js/hero.js"></script><script src="js/app.js"></script><script src="js/planner.js"></script>
+</body></html>

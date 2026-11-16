@@ -7,10 +7,10 @@ Karya untuk **Lomba Programming — ISCOMFEST 2026** (HMPSSI Universitas Mercu B
 
 | | |
 |---|---|
-| 🌐 **Demo (live)** | `https://<username>.github.io/<nama-repo>/` |
-| 📦 **Repository** | `https://github.com/IvankaBunga/PROGRAMMING_Bebas-Weh-Lah_POLBAN` |
+| 🌐 **Demo (live)** | `https://<username>.github.io/<nama-repo>/` ← *ganti dengan tautan hosting kamu* |
+| 📦 **Repository** | `https://github.com/<username>/<nama-repo>` |
 | 🎬 **Video demo** | `<tautan video>` |
-| 👥 **Tim** | `Bebas Weh Lah` — `Politeknik Negeri Bandung` |
+| 👥 **Tim** | `<Nama Tim>` — `<Asal Instansi>` |
 
 ---
 
@@ -93,8 +93,8 @@ rutekita/
 ### 1. Ambil source code
 
 ```bash
-git clone https://github.com/IvankaBunga/PROGRAMMING_Bebas-Weh-Lah_POLBAN.git
-cd PROGRAMMING_Bebas-Weh-Lah_POLBAN
+git clone https://github.com/<username>/<nama-repo>.git
+cd <nama-repo>
 ```
 *(Atau unduh ZIP dari GitHub/Google Drive, lalu ekstrak.)*
 
@@ -167,9 +167,9 @@ Kode: [MIT License](LICENSE). Data: ODbL 1.0 (lihat bagian atribusi di atas).
 
 ## 👥 Tim
 
-|       Nama                | Peran     |
-| `Ivanka Bunga Aulia`      | `Ketua`   |
-| `Fathia Indira Salsabila` | `Anggota` |
-| `Fidella Rafida Ariani`   | `Anggota` |
+| Nama | Peran |
+|---|---|
+| `<Nama Ketua>` | Ketua / `<peran>` |
+| `<Nama Anggota>` | `<peran>` |
 
 Dibuat untuk **ISCOMFEST 2026 — Lomba Programming**.
