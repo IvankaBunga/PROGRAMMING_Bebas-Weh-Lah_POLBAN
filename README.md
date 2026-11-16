@@ -7,10 +7,10 @@ Karya untuk **Lomba Programming — ISCOMFEST 2026** (HMPSSI Universitas Mercu B
 
 | | |
 |---|---|
-| 🌐 **Demo (live)** | `https://<username>.github.io/<nama-repo>/` ← *ganti dengan tautan hosting kamu* |
-| 📦 **Repository** | `https://github.com/<username>/<nama-repo>` |
+| 🌐 **Demo (live)** | `https://<username>.github.io/<nama-repo>/` |
+| 📦 **Repository** | `https://github.com/IvankaBunga/PROGRAMMING_Bebas-Weh-Lah_POLBAN` |
 | 🎬 **Video demo** | `<tautan video>` |
-| 👥 **Tim** | `<Nama Tim>` — `<Asal Instansi>` |
+| 👥 **Tim** | `Bebas Weh Lah` — `Politeknik Negeri Bandung` |
 
 ---
 
