@@ -1,0 +1,113 @@
+{
+ "_meta": {
+  "researched_at": "2026-11-16",
+  "note": "hours = jam operasional. conf 'sumber' = ada sumber 2025-2026; 'perkiraan' = tidak ada jadwal resmi, ini perkiraan kasar."
+ },
+ "categories": {
+  "mjt": {
+   "hours": "04.30 – 20.00 (bervariasi per koridor)",
+   "conf": "sumber",
+   "status": "Beroperasi (laporan operasional Apr 2026)",
+   "conf_status": "sumber",
+   "source": {
+    "title": "What's New Indonesia, Agu 2026",
+    "url": "https://whatsnewindonesia.com/bandung/metro-jabar-trans-bandung-guide"
+   }
+  },
+  "tmb": {
+   "hours": "±05.00 – 15.00",
+   "conf": "perkiraan",
+   "note": "Belum ada jadwal resmi. Satu artikel opini 2026 menyebut keberangkatan terakhir sekitar 15.00.",
+   "status": "Belum ada konfirmasi resmi",
+   "conf_status": "perkiraan",
+   "source": {
+    "title": "Mojok, 2026 (opini)",
+    "url": "https://mojok.co/terminal/jawa-barat-nggak-niat-mengembangkan-brt/"
+   }
+  },
+  "feeder": {
+   "hours": "±06.00 – 18.00",
+   "conf": "perkiraan",
+   "note": "Tidak ditemukan jadwal publik. Feeder MJT tercatat beroperasi (2 rute, Apr 2026).",
+   "status": "Beroperasi (menurut laporan MJT Apr 2026)",
+   "conf_status": "sumber",
+   "source": {
+    "title": "Rakyat Merdeka, 28 Mei 2026",
+    "url": "https://rm.id/baca-berita/kolom/312436/metro-jabar-trans-menjawab-macet-dan-menghadapi-tantangan-keberlanjutan"
+   }
+  },
+  "damri": {
+   "hours": "±05.00 – 18.00",
+   "conf": "perkiraan",
+   "note": "Jadwal jam-jaman hanya ditemukan untuk Ledeng–Leuwipanjang. Jalur lain belum ada sumber jam.",
+   "status": "Sebagian jalur pernah dihentikan (2021), cek ke DAMRI",
+   "conf_status": "perkiraan"
+  },
+  "angkot": {
+   "hours": "±05.00 – 20.00",
+   "conf": "perkiraan",
+   "note": "Angkot tidak punya jadwal resmi: jalan selama ada penumpang, makin sepi di malam hari.",
+   "status": "Umumnya beroperasi, tanpa data resmi per trayek",
+   "conf_status": "perkiraan"
+  },
+  "elf": {
+   "hours": "±05.00 – 17.00",
+   "conf": "perkiraan",
+   "note": "Elf biasanya berangkat saat penuh, dan jarang ada setelah sore.",
+   "status": "Umumnya beroperasi, tanpa data resmi per trayek",
+   "conf_status": "perkiraan"
+  },
+  "shuttle": {
+   "hours": "Mengikuti jadwal kawasan/stasiun",
+   "conf": "perkiraan",
+   "note": "Tiap shuttle punya pengelola dan jadwal sendiri. Cek ke pengelola kawasan.",
+   "status": "Belum ada konfirmasi",
+   "conf_status": "perkiraan"
+  },
+  "commuter_bandung_raya": {
+   "hours": "04.00 – 22.25 (±17 perjalanan/arah)",
+   "conf": "sumber",
+   "note": "Keberangkatan pertama dari Padalarang 04.00, terakhir dari Cicalengka 22.25 (jadwal KAI Commuter 2026).",
+   "status": "Beroperasi (diperpanjang sampai Cicalengka sejak 1 Feb 2026)",
+   "conf_status": "sumber",
+   "source": {
+    "title": "Kompas TV, Jan 2026",
+    "url": "https://www.kompas.tv/info-publik/641995/jadwal-commuter-line-bandung-raya-pada-januari-2026"
+   }
+  },
+  "commuter_garut": {
+   "hours": "Cek jadwal KAI Commuter",
+   "conf": "perkiraan",
+   "note": "Sekitar 6 perjalanan per hari menurut Wikipedia. Jam pastinya tidak ditemukan.",
+   "status": "Beroperasi",
+   "conf_status": "perkiraan"
+  },
+  "unknown": {
+   "hours": "±05.00 – 18.00",
+   "conf": "perkiraan",
+   "note": "Jenis kendaraan belum jelas, jadi jam diperkirakan seperti angkot/minibus pedesaan.",
+   "status": "Belum ada konfirmasi resmi",
+   "conf_status": "perkiraan"
+  }
+ },
+ "mjt_corridors": {
+  "1": "Setiap hari 04.40 – 20.30",
+  "2": "Setiap hari 04.30 – 20.00",
+  "3": "Sen–Sab 04.30 – 20.00; Minggu 16.00 – 20.00",
+  "4": "Setiap hari 04.30 – 20.30",
+  "5": "Setiap hari 04.30 – 19.30",
+  "6": "Setiap hari 06.00 – 13.00"
+ },
+ "overrides": {
+  "Jalur 2 · Ledeng – Leuwipanjang": {
+   "hours": "Jam-jaman: 06.30, 07.30, 09.00, 11.00, 13.00, 15.30, 17.00 (PP)",
+   "conf": "sumber",
+   "status": "Beroperasi lagi sejak 8 Sep 2025",
+   "conf_status": "sumber",
+   "source": {
+    "title": "Bisnis.com, 7 Sep 2025",
+    "url": "https://ekonomi.bisnis.com/read/20250907/98/1909087/damri-kembali-operasikan-rute-ledeng-leuwipanjang-mulai-besok-8-september-2025"
+   }
+  }
+ }
+}
