@@ -30,9 +30,13 @@ Angkutan umum di Bandung Raya sangat beragam (angkot, Metro Jabar Trans, Trans M
 
 ## 🖼️ Tangkapan Layar
 
-![Beranda](docs/screenshots/beranda.png)
+![Beranda](docs/screenshots/Beranda.png)
 ![Cari Rute](docs/screenshots/CariRute.png)
-![Detail Trayek](docs/screenshots/Trayek.png)
+![Trayek](docs/screenshots/Trayek.png)
+![Detail Trayek](docs/screenshots/DetailTrayek2.png)
+![Detail Trayek](docs/screenshots/DetailTrayek2.png)
+![Detail Jalur](docs/screenshots/Jalur.png)
+![About](docs/screenshots/About.png)
 
 ## 🛠️ Teknologi
 
