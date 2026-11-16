@@ -7,6 +7,7 @@ Karya untuk **Lomba Programming — ISCOMFEST 2026** (HMPSSI Universitas Mercu B
 
 | | |
 |---|---|
+| 🌐 **Demo (live)** | `https://ivankabunga.github.io/PROGRAMMING_Bebas-Weh-Lah_POLBAN/` |
 | 📦 **Repository** | `https://github.com/<username>/<nama-repo>` |
 | 🎬 **Video demo** | `https://drive.google.com/drive/folders/1BYVZfgS3ImRxV59cjAYBh4DFmzQNSUSz` |
 | 👥 **Tim** | `Bebas Weh Lah` — `Politeknik Negeri Bandung` |
@@ -82,10 +83,10 @@ rutekita/
 
 ## 🚀 Cara Menjalankan
 
-> ⚠️ Website memuat data lewat `fetch()`, sehingga **tidak boleh dibuka langsung lewat `file://`** (klik dua kali `index.html`). Jalankan lewat server lokal seperti di bawah.
-> Butuh **koneksi internet** untuk memuat Leaflet, font, dan ubin peta OpenStreetMap.
+### Cara paling mudah
+Akses langsung di browser : https://ivankabunga.github.io/PROGRAMMING_Bebas-Weh-Lah_POLBAN/
 
-### Prasyarat
+### Cara Lain : Prasyarat
 - Browser modern (Chrome, Edge, Firefox, Safari — versi terbaru)
 - Salah satu: **VS Code + Live Server**, **Python 3**, atau **Node.js**
 
