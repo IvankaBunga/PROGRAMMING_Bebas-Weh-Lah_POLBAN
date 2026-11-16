@@ -92,8 +92,8 @@ rutekita/
 ### 1. Ambil source code
 
 ```bash
-git clone https://github.com/<username>/<nama-repo>.git
-cd <nama-repo>
+git clone https://github.com/IvankaBunga/PROGRAMMING_Bebas-Weh-Lah_POLBAN.git
+cd PROGRAMMING_Bebas-Weh-Lah_POLBAN.git
 ```
 *(Atau unduh ZIP dari GitHub/Google Drive, lalu ekstrak.)*
 
@@ -126,7 +126,7 @@ Buka alamat yang tampil di terminal (biasanya http://localhost:3000).
 1. Push proyek ke repository GitHub (**Public**).
 2. Buka **Settings → Pages**.
 3. Pada *Build and deployment*, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`, lalu **Save**.
-4. Tunggu 1–2 menit; website tersedia di `https://<username>.github.io/<nama-repo>/`.
+4. Tunggu 1–2 menit;
 
 Karena seluruh path bersifat relatif, website langsung berjalan tanpa konfigurasi tambahan. Alternatif hosting gratis: Netlify, Vercel, atau Cloudflare Pages (cukup *drag & drop* folder).
 
