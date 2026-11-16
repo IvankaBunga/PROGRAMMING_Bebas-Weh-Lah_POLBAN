@@ -93,8 +93,8 @@ rutekita/
 ### 1. Ambil source code
 
 ```bash
-git clone https://github.com/<username>/<nama-repo>.git
-cd <nama-repo>
+git clone https://github.com/IvankaBunga/PROGRAMMING_Bebas-Weh-Lah_POLBAN.git
+cd PROGRAMMING_Bebas-Weh-Lah_POLBAN
 ```
 *(Atau unduh ZIP dari GitHub/Google Drive, lalu ekstrak.)*
 
@@ -167,9 +167,9 @@ Kode: [MIT License](LICENSE). Data: ODbL 1.0 (lihat bagian atribusi di atas).
 
 ## 👥 Tim
 
-| Nama | Peran |
-|---|---|
-| `<Nama Ketua>` | Ketua / `<peran>` |
-| `<Nama Anggota>` | `<peran>` |
+|       Nama                | Peran     |
+| `Ivanka Bunga Aulia`      | `Ketua`   |
+| `Fathia Indira Salsabila` | `Anggota` |
+| `Fidella Rafida Ariani`   | `Anggota` |
 
 Dibuat untuk **ISCOMFEST 2026 — Lomba Programming**.
