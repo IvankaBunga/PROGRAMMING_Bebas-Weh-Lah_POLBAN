@@ -7,10 +7,9 @@ Karya untuk **Lomba Programming — ISCOMFEST 2026** (HMPSSI Universitas Mercu B
 
 | | |
 |---|---|
-| 🌐 **Demo (live)** | `https://<username>.github.io/<nama-repo>/` ← *ganti dengan tautan hosting kamu* |
 | 📦 **Repository** | `https://github.com/<username>/<nama-repo>` |
-| 🎬 **Video demo** | `<tautan video>` |
-| 👥 **Tim** | `<Nama Tim>` — `<Asal Instansi>` |
+| 🎬 **Video demo** | `https://drive.google.com/drive/folders/1BYVZfgS3ImRxV59cjAYBh4DFmzQNSUSz` |
+| 👥 **Tim** | `Bebas Weh Lah` — `Politeknik Negeri Bandung` |
 
 ---
 
